@@ -1,0 +1,25 @@
+package Abstraction;
+
+import Inheritance.Smart_Phone;
+import Inheritance.keypad_Phone;
+
+public class MobileApplication {
+	public static void main(String[] args) {
+		keypad_Phone kp = new keypad_Phone();
+		System.out.println("Keypad phone Details");
+		kp.calls();
+		kp.chat();
+		kp.capture();
+		kp.gps();
+		kp.transactions();
+		System.out.println();
+		System.out.println("Smart phone Details");
+		Smart_Phone sp = new Smart_Phone();
+		sp.calls();
+		sp.chat();
+		sp.capture();
+		sp.gps();
+		sp.transactions();	
+	}
+
+}
